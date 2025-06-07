@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amul - Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <div class="logo">
-        <img src="Amul.png" alt="Amul Logo">
-        <span class="shop-name">Shree Laxumi Amul Shopiee</span>
-    </div>
-    <div class="nav-items">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="gallery.html" class="active">Gallery</a>
-        <a href="contact.html">Contact Us</a>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Amul.png" alt="Amul Logo" class="logo-img">
+            <span class="shop-name ms-3">Shree Laxumi Amul Shopiee</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -35,17 +56,27 @@
     <div class="ice-cream cone reversed"></div>
 </div>
 
-<main class="content-section">
-    <h1>Gallery</h1>
-    
-    <div class="gallery-content">
-        <h2>I am Gallery</h2>
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="content-card animate__animated animate__fadeIn">
+                <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Gallery</h1>
+                
+                <div class="gallery-content animate__animated animate__fadeInUp animate__delay-1s">
+                    <h2>Comming Soon......</h2>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
-<footer>
-    <p>Shree Laxumi Amul Shopiee</p>
+<footer class="py-4 text-center text-white">
+    <div class="container">
+        <p class="mb-0">Shree Laxumi Amul Shopiee</p>
+    </div>
 </footer>
 
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
